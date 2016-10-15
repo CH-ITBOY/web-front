@@ -9,6 +9,7 @@ WEB前端收藏
   [3 Anglar](https://github.com/angular/angular "双向绑定，组件丰富")<br/>
   [4 React](https://github.com/facebook/react "快速，简单，虚拟dom")<br/>
   [5 Backbone](https://github.com/jashkenas/backbone "兼容性好，对复杂数据处理的好")<br/>
+  [5 mithril](http://mithril.js.org/ "虚拟dom，渲染速度快，小")
   [6 todomvc：很多前端框架的mvc实例](https://github.com/tastejs/todomvc)
 ###其他
   [1 AOS.js：滚动动画库，随滚动条上下滚动切换动画](https://github.com/michalsnik/aos)<br/>
