@@ -1,0 +1,38 @@
+/* sass 字符串替换函数 */
+@function replace($str, $sub:null, $rep:null) {
+  $f: str-index($str, $sub);
+  @if ($sub == $rep or $f == null) {
+    @return $str
+  }
+  $str1: str-slice($str, 1, $f - 1);
+  $str2: str-slice($str, $f + 1);
+  @return replace(#{$str1}#{$rep}#{$str2}, $sub, $rep)
+}
+
+/* 单个按钮图标 $png 图表名字，$hover，是否返回hover图标*/
+@mixin icon($png,$hover:false) {
+  @if $hover {
+    content: url(../img/icon_#{$png}_hover.png);
+  } @else {
+    content: url(../img/icon_#{$png}.png);
+  }
+}
+
+/*生成多个图标，第一参数传图标名称数组，第二个参数代表是否有hover图标，第三个参数代表是否可操作*/
+@mixin icons($icons,$hover:true,$pointer:true) {
+  @for $i from 1 through length($icons) {
+    $item: nth($icons,$i);
+    $name: replace($item,"_","-");
+	@if $hover {
+      .icon-#{$name}:hover::before {
+	    @if $pointer {
+		  cursor: pointer;
+	    }
+        @include icon($item,true);
+      }
+	}
+    .icon-#{$name}::before {
+	  @include icon($item);
+    }
+  }
+}
