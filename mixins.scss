@@ -2,11 +2,11 @@
 @function replace($str, $sub:null, $rep:null) {
   $f: str-index($str, $sub);
   @if ($sub == $rep or $f == null) {
-    @return $str
+    @return $str;
   }
   $str1: str-slice($str, 1, $f - 1);
   $str2: str-slice($str, $f + 1);
-  @return replace(#{$str1}#{$rep}#{$str2}, $sub, $rep)
+  @return replace(#{$str1}#{$rep}#{$str2}, $sub, $rep);
 }
 
 /* 单个按钮图标 $png 图表名字，$hover，是否返回hover图标*/
