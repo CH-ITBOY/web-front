@@ -10,7 +10,8 @@ WEB前端收藏
   [4 React：快速，简单，虚拟dom](https://github.com/facebook/react "快速，简单，虚拟dom")<br/>
   [5 Backbone：兼容性好，对复杂数据处理的好](https://github.com/jashkenas/backbone "兼容性好，对复杂数据处理的好")<br/>
   [6 mithril：虚拟dom，渲染速度快，小](http://mithril.js.org "虚拟dom，渲染速度快，小")<br/>
-  [7 todomvc：很多前端框架的mvc实例](https://github.com/tastejs/todomvc)
+  [7 todomvc：很多前端框架的mvc实例](https://github.com/tastejs/todomvc)<br/>
+  [8 polythene：Mithril和React的Material Design组件库(https://github.com/ArthurClemens/polythene)]<br/>
 ###其他
   [1 AOS.js：滚动动画库，随滚动条上下滚动切换动画](https://github.com/michalsnik/aos)<br/>
   [2 Shepherd.js：向导，帮助网站应用程序给用户做导游ie9+](https://github.com/HubSpot/shepherd)<br/>
